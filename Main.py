@@ -30,7 +30,7 @@ class Stack:
 
     def status(self):
         for i in range(0, len(stack.items)):
-             print(stack.items[i],end="\n")
+            print(stack.items[i],end="\n")
         
 
 
