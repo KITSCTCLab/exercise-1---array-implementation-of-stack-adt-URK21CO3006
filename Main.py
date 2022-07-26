@@ -5,28 +5,30 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-        if stack.indx == -1:
+         if (stack.top == -1):
             return True
-        return False
+        else:
+            return False
 
     def is_full(self):
-        if stack.indx== stack.size-1 :
+        if (stack.top == stack.size -1 ):
             return True
-        return False
+        else:
+            return False
 
     def push(self, data):
-        if not self.is_full():
-               stack.items.append(data)
-            stack.indx=stack.indx+1
-
+           if not self.is_full():
+           stack.top += 1
+        stack.items.append(data)
     def pop(self):
-        if not self.is_empty():
-            stack.items.pop()
-            stack.indx=stack.indx-1
+         if not self.is_empty():
+            x = stack.items.pop()
+            stack.top -= 1
+            return x
 
 
     def status(self):
-         for i in range(0, len(stack.items)):
+        for i in range(0, len(stack.items)):
              print(stack.items[i],end="\n")
 
 # Do not change the following code
